@@ -4,7 +4,7 @@
   "description": "火山引擎OpenAPI SDK nodejs版",
   "main": "lib/index.js",
   "scripts": {
-    "build": "rm -rf lib && tsc",
+    "build": "rm -rf lib && tsc --traceResolution",
     "lint": "eslint . --ext ts --fix --quiet",
     "dev": "tsc --watch",
     "dev:proxy": "VOLC_PROXY_PORT=8888 yarn dev",
